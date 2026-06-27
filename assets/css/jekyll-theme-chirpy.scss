@@ -1,0 +1,16 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+.img-caption {
+  font-size: 0.85em;
+  color: #9ca3af;
+  margin-top: 0.3rem;
+}
