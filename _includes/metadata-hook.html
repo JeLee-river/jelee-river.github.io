@@ -1,0 +1,18 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.post-content img').forEach(function (img) {
+      function applyWidth(el) {
+        if (el.naturalHeight > el.naturalWidth) {
+          el.style.width = '60%';
+        } else {
+          el.style.width = '100%';
+        }
+      }
+      if (img.complete && img.naturalWidth > 0) {
+        applyWidth(img);
+      } else {
+        img.addEventListener('load', function () { applyWidth(img); });
+      }
+    });
+  });
+</script>
