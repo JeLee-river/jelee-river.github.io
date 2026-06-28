@@ -15,7 +15,17 @@
   margin-top: 0.3rem;
 }
 
-.post-content img {
+.content img {
   border: 1px solid #e5e7eb;
   border-radius: 4px;
+}
+
+.content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
